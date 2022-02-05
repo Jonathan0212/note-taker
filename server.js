@@ -1,5 +1,5 @@
 const express = require('express');
-const apiRoutes = require('./routes/apiRoutes');
+const apiRoutes = require('./routes/apiRoutes.js');
 const htmlRoutes = require('./routes/htmlRoutes');
 
 
@@ -15,5 +15,5 @@ app.use('/api', apiRoutes)
 app.use('/', htmlRoutes)
 
 app.listen(PORT, () => {
-    console.log(`listening on PORT: ${PORT}`)
+    console.log(`listening on PORT: ${PORT}`);
 })
