@@ -1,6 +1,6 @@
 const util = require('util');
 const fs = require('fs');
-const uuid= require('uuid');
+const uuid = require('uuid').v4;
 const { parse } = require('path');
 const readFileAsync = util.promisify(fs.readFile);
 const writeFileAsync = util.promisify(fs.writeFile);
